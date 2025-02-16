@@ -1,12 +1,11 @@
-export default function calcrem(pxnum: number) {
+export default function calcrem(pxnum: number, min: number, max: number) {
     const digit = 5;
-    console.log(pxnum);
+    console.log(pxnum, min, max);
     const remlist: number[] = [];
-    for (let i = 1; i <= 100; i++) {
+    for (let i = min; i <= max; i++) {
         const rem = i / pxnum;
         remlist.push(parseFloat(rem.toFixed(digit)));
     }
-    console.log(remlist);
 
     return remlist;
 }
