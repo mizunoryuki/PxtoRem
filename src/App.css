@@ -29,8 +29,6 @@
 
 .inputContainer input {
     width: 3rem;
-}
-
-.inputContainer button {
-    width: fit-content;
+    border-radius: 2px;
+    border: 2px solid gray;
 }
